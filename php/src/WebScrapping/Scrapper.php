@@ -49,7 +49,7 @@ class Scrapper {
     $id = $idNodeList->length > 0 ? $idNodeList->item(0)->textContent : '';
     // Pegando o Titulo dos projetos.
     $title = $element->getElementsByTagName('h4')->item(0)->textContent;
-    // Setando os autores e suas instituições em um array.
+    // Inserindo os autores e suas instituições em um array.
     $authors = [];
     $authorsSpan = $element->getElementsByTagName('span');
     foreach ($authorsSpan as $authorSpan) {
